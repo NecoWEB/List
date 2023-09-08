@@ -1,0 +1,247 @@
+#login_body, #list_body {  /* or any parent wrapper */
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#index_body {  /* or any parent wrapper */
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    background-image: url(../img/making-list.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+nav.navbar {
+    background-color: transparent;
+}
+
+footer {
+    background-color: #143d59;
+}
+
+footer .categories {
+    align-items: center;
+    display: flex;
+    align-content: center;
+    padding: 20px 0;
+}
+
+footer .social-medias {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+footer p {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 13px;
+}
+
+.navbar .nav-link {
+    color: #FFF;
+}
+
+.navbar .nav-link:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+header img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#index_body {
+    overflow: hidden;
+}
+
+#forgot_password_form {
+    display: none;
+}
+
+#forgot-password {
+    cursor: pointer;
+}
+
+#emailError, #passwordError {
+    color: #ff0000;
+}
+
+#login-form, .signup_form {
+    width: 300px;
+    max-width: 300px;
+}
+
+#login-form small, #forget-form small, .signup_form small {
+    color: #ff0000;
+}
+
+.form-field input {
+    border: solid 2px #f0f0f0;
+}
+
+.form-field.success input {
+    border-color: #28a745;
+}
+
+#login-form .form-control:focus, #forget-form .form-control:focus, .signup_form .form-control:focus {
+    box-shadow: none;
+}
+
+.signup_form input {
+    width: 100%;
+}
+
+.log_in {
+    text-align: center;
+}
+
+.home-content, .create-a-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.home-content .effective, .home-content .statistic, .home-content .time {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 30px 0;
+    opacity: .8;
+}
+
+.create-a-list .list, .create-a-list .product {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+.create-a-list input {
+    width: 300px;   
+}
+
+#add-product-button {
+    width: 100%;
+}
+
+.home-content h3  {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+
+.home-content p {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.add-product {
+    display: none;
+}
+
+.ajax-message.alert {
+    max-width: 350px;
+}
+
+.product-list, .productsInAList {
+    max-height: 250px;
+    overflow-y: auto;
+    width: 90%;
+}
+
+.product-list table td,  .product-list table td th, .productsInAList table td,  .productsInAList table td th {
+    text-align: left;
+    padding: 8px 8px 8px 0;
+}
+
+.ajax-message ul {
+    margin-bottom: 0;
+}
+
+.productsList {
+    display: none;
+    width: 100%;
+}
+
+.productsInAList {
+    margin: 0 auto;
+}
+
+.productsInAList table {
+    width: 100%;
+}
+
+.view-a-list {
+    margin: 0 10px;
+}
+
+.view-a-list table {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: white;
+    max-height: 10px;
+    overflow-y: auto;
+}
+
+
+.view-a-list td, .view-a-list th {
+    padding: 10px;
+}
+
+.list-item {
+    text-align: center;
+}
+
+.checkList {
+    text-align: center;
+}
+
+.main-reset-form {
+    justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+    .home-content, .create-a-list {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .home-content p {
+        font-size: 18px;
+    }
+
+    footer .categories p {
+        margin-left: 10px;
+    }
+}
